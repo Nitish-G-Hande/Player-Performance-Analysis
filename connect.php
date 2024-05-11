@@ -16,7 +16,7 @@
 		$stmt->bind_param("sssssi", $firstName, $lastName, $gender, $email, $password, $number);
 		$execval = $stmt->execute();
 		echo $execval;
-		header('location:2.html');
+		header('location:home.html');
 		//echo "Registration successful...";
 		$stmt->close();
 		$conn->close();
