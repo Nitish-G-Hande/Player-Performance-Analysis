@@ -1,0 +1,91 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Premier League Website</title>
+<style>
+  body 
+{
+font-family: Arial, Helvetica, sans-serif;
+}
+form
+{
+padding-left:400px;
+padding-right:400px;
+border: 3px solid #f1f1f1;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+ 
+}
+
+img 
+{
+
+margin:5px;
+width: 10%;
+border-radius: 50%;
+}
+
+button
+{background-color:#19398a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+input[type=reset]
+{
+  cursor: pointer;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.1
+{color:white;
+}
+H1{
+TEXT-ALIGN:CENTER;
+COLOR:#19398a;
+}
+</style>
+</head>
+<body>
+  <img src="IPL-LOGO.webp" alt="ipl-logo-new-old">
+<h1 >Indian Premier League</h1>
+<form>
+    <img src="avatar1.webp" alt="Avatar"><br>
+  <input type="text" id="username"placeholder="username"><br>
+  <input type ="password" id="password" placeholder="password"><br>
+  <button type="button" onclick="login()">login</button><br>
+  <input type="checkbox" class="1">Remember me<br><br>
+  <b><input type="reset" value="cancel" class="2"></b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+   forgot<a href="4.html">password?</a><br><br>
+   New user?<a href="3.html">Signup</a>
+</form>
+<hr>
+<h3>YOU CAN ALSO FIND US ON</H3>
+<a href="https://www.facebook.com/IPL/" target="_blank"><IMG SRC="Facebook-logo.png"></a>
+<a href="https://www.instagram.com/iplt20/" target="_blank"><img src="Instagram-Logo.png"></a>
+    <script type="text/javascript">
+    function login(){
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    if ( username == "Ninad" && password == "789" || username=="abc" && password=="888")
+    {
+    location.assign("2.html")
+    }
+else{
+     alert("Invalid Username/Password")
+     }
+     }
+    </script>   
+  </body>
+</html>
